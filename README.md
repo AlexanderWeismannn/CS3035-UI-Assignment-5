@@ -1,6 +1,6 @@
 # CS3035 Assignment 5: Model-View-Controller
 
-Due: Friday, November 20, 11:55pm
+Due: Wednesday, November 18, 11:55pm
 
 Overview
 --------
