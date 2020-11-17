@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Separator?>
+
+<HBox xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Part2.ToolBarController">
+    <ToolBar prefHeight="50.0" minHeight="50.0" minWidth="550.0" prefWidth="600.0">
+
+        <HBox>
+            <HBox spacing="10">
+                <ToggleButton id="greenButton" fx:id="$greenButton" onAction="#greenButtonClicked" style="-fx-background-color: #66e889;" text="green" textFill="black" toggleGroup="$colorGroup">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </ToggleButton>
+
+                <ToggleButton id="redButton" fx:id="$redButton" onAction="#redButtonClicked" style="-fx-background-color:  #ff3333;" text="red" textFill="black" toggleGroup="$colorGroup" selected="true">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </ToggleButton>
+
+                <ToggleButton id="blueButton" fx:id="$blueButton" onAction="#blueButtonClicked" style="-fx-background-color: #8fcceb;" text="blue" textFill="black" toggleGroup="$colorGroup">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </ToggleButton>
+
+                <HBox.margin>
+                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                </HBox.margin>
+                <Separator orientation="VERTICAL"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <ToggleButton fx:id="$createButton" text="create" toggleGroup="$actionGroup" selected="true" onAction="#createButtonClicked">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </ToggleButton>
+                <ToggleButton fx:id="$deleteButton" text="delete" toggleGroup="$actionGroup" onAction="#deleteButtonClicked">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </ToggleButton>
+                <HBox.margin>
+                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                </HBox.margin>
+            </HBox>
+        </HBox>
+    </ToolBar>
+</HBox>
